@@ -45,7 +45,12 @@ $user2 = new User(' lawest', ' lawest@gmail.com', '343');
 // echo $user1->email;
 // echo $user2->username;
 
-//Inheritance 
+/* ----------- Inheritence ---------- */
+
+/*
+  Inheritence is the ability to create a new class from an existing class.
+  It is achieved by creating a new class that extends an existing class.
+*/
 
 class Employee extends User {
     public function __construct($username, $email, $title, $password) {
