@@ -51,18 +51,30 @@ $t = date("H");
 
 // echo !empty($posts) ? $posts[0] : 'No Posts';
 
-$favcolor = 'orange';
+// $favcolor = 'orange';
 
-switch ($favcolor) {
-  case 'red';
-    echo 'Your favorite color is red';
-    break;
-  case 'blue';
-    echo 'Your favorite color is blue';
-    break;
-  case 'green';
-    echo 'Your favorite color is green';
-    break;
-  default:
-    echo 'Your favorite color is not red, green or blue';
+// switch ($favcolor) {
+//   case 'red';
+//     echo 'Your favorite color is red';
+//     break;
+//   case 'blue';
+//     echo 'Your favorite color is blue';
+//     break;
+//   case 'green';
+//     echo 'Your favorite color is green';
+//     break;
+//   default:
+//     echo 'Your favorite color is not red, green or blue';
+// }
+
+
+$age = 23;
+$salary = 19000;
+
+if ($age === 23) {
+  // echo "1";
 }
+
+// Null coalescing operator
+$myName = $name ?? 'Frank';
+echo $myName;

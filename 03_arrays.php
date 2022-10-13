@@ -40,10 +40,11 @@ $hex = [
 $person = [
   'first_name' => 'Francis',
   'last_name' => 'Ndungu',
-  'email' => 'frankndungu09@gmail.com'
+  'email' => 'frankndungu09@gmail.com',
+  'age' => 23
 ];
 
-// echo $person['first_name'];
+echo $person['first_name'];
 
 // Multi-dimensional array
 $people = [
@@ -74,6 +75,6 @@ $people = [
     ],
   ];
 
-  // echo $people[4]['email'];
-  var_dump(json_encode($people));
+//   // echo $people[4]['email'];
+//   var_dump(json_encode($people));
   
