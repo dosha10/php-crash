@@ -30,23 +30,45 @@
 //     $x++;
 // }
 
-$posts = ['First Post ', 'Second Post ', 'Third Post'];
+// $posts = ['First Post ', 'Second Post ', 'Third Post'];
 
-for($x = 0; $x < count($posts); $x++) {
-    echo $posts[$x];
-}
+// for($x = 0; $x < count($posts); $x++) {
+//     echo $posts[$x];
+// }
 
-foreach($posts as $post) {
-    echo $post;
-}
+// foreach($posts as $post) {
+//     echo $post;
+// }
 
 
 $person = [
     'first_name' => 'Calvin',
     'last_name' => 'Kidavasi',
-    'email' => 'calvin@gmail.com'
+    'email' => 'calvin@gmail.com',
+    'hobbies' => [' Tennis', ' Video Games']
 ];
 
-foreach($person as $key => $value) {
-    echo "$key - $value<br>";
+// using foreach with an associative arrray
+
+foreach ($person as $key => $value) {
+    if (is_array($value)) {
+        echo $key .' -'. implode($value);
+    } else {
+        echo "$key - $value<br>";
+    }
 }
+
+// $counter = 0;
+// while ($counter < 10);{
+//   echo $counter.'<br>';
+//   $counter++;
+// }
+
+// for ($i = 0; $i < 10; $i++) {
+//   echo $i.'<br>';
+// }
+
+// $fruits = ["Apple ", "Orange ", "Pears"];
+// foreach ($fruits as $fruit) {
+//   echo $fruit;
+// }
